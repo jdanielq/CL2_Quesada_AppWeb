@@ -27,6 +27,7 @@ public class Usuario {
     private String apellidos;
     @Column(name = "activo")
     private Boolean activo;
+
     @ManyToMany(
             cascade = CascadeType.MERGE,
             fetch = FetchType.EAGER )
